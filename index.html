@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>tic-tac-toe</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/main.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <table id="board">
+                        <caption>Tic Tac Toe</caption>
+                        <tr><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td></tr>
+                    </table>
+                </div>
+                <br>
+                <div class="row click">
+                    <p id="begin">Click on Start to begin.</p>
+                    <button class="btn btn-danger btn-lg text-center" id ="start">Start</button>
+                    <button class="btn btn-danger btn-lg text-center" id ="play" style="display:none;">Play</button>
+                    <button class="btn btn-danger btn-lg text-center" id ="pause" style="display:none;">Pause</button>
+                    <button class="btn btn-warning btn-lg text-center" id ="reset">Reset</button>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

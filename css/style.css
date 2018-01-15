@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.name {
+    text-align: center;
+    top: 50px ;
+}
+caption {
+    text-align: center !important;
+    font-size: 35px;
+    font-family: cursive, monospace, sans-serif;
+    color: blue !important;
+}
+table {
+    margin: 0 auto;
+    margin-top: 100px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+table tr td {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid black;
+}
+table tr td:hover {
+    background-color: burlywood;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px black;
+    border: 1px solid saddlebrown;
+}
+.row {
+    text-align: center;
+}
