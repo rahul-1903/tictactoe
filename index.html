@@ -11,7 +11,21 @@
         <script src="js/main.js" type="text/javascript"></script>
     </head>
     <body>
-        <section>
+       <!-- for asking X or O -->
+        <section id="over-lay">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="overlay">
+                        Which one do you want to choose?<br/><br/>
+                        <button class="btn btn-danger axe" id="first">X</button>
+                        <button class="btn btn-danger zero" id="second">O</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>  
+       <!-- for playing -->
+        <section id="game">
             <div class="container-fluid">
                 <div class="row">
                     <table id="board">
