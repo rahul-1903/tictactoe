@@ -34,3 +34,30 @@ table tr td:hover {
 .row {
     text-align: center;
 }
+#game {
+    display: none;
+}
+#over-lay {
+    display: ;
+}
+.overlay {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 240px;
+    height: 240px;
+    border: 2px solid black;
+    font-size: 20px;
+    font-family: cursive, monospace, sans-serif;
+    color: blue;
+    background: radial-gradient(#ffcc66, #ffcc66, brown);
+    line-height: 30px;
+    padding-top: 20px;
+}
+.axe, .zero{
+    color: orange !important;
+    background: green !important;
+}
+.axe:hover, .zero:hover {
+    background: orange !important;
+    color: green !important;
+}
