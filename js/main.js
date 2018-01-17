@@ -3,6 +3,22 @@ $(document).ready(function() {
     var x = "table tr td";
     var move = 1;
     var play = false;
+    var axe = "X";
+    var zero = "O";
+    var king, queen;
+    $("#first").click(function() {
+        king = "X";
+        queen = "O";
+        $("#over-lay").hide();
+        $("#game").fadeIn();
+    });
+    $("#second").click(function() {
+        king = "O";
+        queen = "X";
+        $("#over-lay").hide();
+        $("#game").fadeIn();
+    })
+    
     $("#start").click(function() {
         $("#start").hide();
         move = 1;
@@ -28,15 +44,17 @@ $(document).ready(function() {
         $("#start").show();
         $("#play").hide();
         $("#pause").hide();
+        $("#game").hide();
+        $("#over-lay").fadeIn();
     });
     $(x).on('click', function() {
         if ($(this).text()=="" && play) {
-            if ((move%2)==1) {$(this).append("X");}
-            else {$(this).append("O");}
+            if ((move%2)==1) {$(this).append(king);}
+            else {$(this).append(queen);}
             ++move;
             var res = checkForWinner();
             if (res != -1 && res != "") {
-                if (checkForWinner()=="X") {alert("Player 1 wins.");}
+                if (checkForWinner()==king) {alert("Player 1 wins.");}
                 else {alert("Player 2 wins.");}
                 reset();
             }
@@ -81,6 +99,8 @@ $(document).ready(function() {
         $("#start").show();
         $("#play").hide();
         $("#pause").hide();
+        $("#game").hide();
+        $("#over-lay").fadeIn();
        $('table tr').each(function() {
             $(this).find('td').each(function() {
                 $(this).empty();
