@@ -1,7 +1,11 @@
-* {
+body{
+    background: #8360c3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin: 0;
     padding: 0;
 }
+
 .name {
     text-align: center;
     top: 50px ;
@@ -38,20 +42,21 @@ table tr td:hover {
     display: none;
 }
 #over-lay {
-    display: ;
+    padding-top: 11vh;
 }
 .overlay {
     margin: 0 auto;
     margin-top: 100px;
-    width: 240px;
-    height: 240px;
-    border: 2px solid black;
+    width: 50vh;
+    height: 50vh;
+    border: 1px solid blue;
     font-size: 20px;
     font-family: cursive, monospace, sans-serif;
     color: blue;
-    background: radial-gradient(#ffcc66, #ffcc66, brown);
+    background: #00B4DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     line-height: 30px;
-    padding-top: 20px;
 }
 .axe, .zero{
     color: orange !important;
